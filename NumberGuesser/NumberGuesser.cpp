@@ -80,7 +80,7 @@ int main()
             return 0;
         }
         if (attempts <= 0) {
-            cout << "You ran out of attempts, too bad!";
+            cout << "You ran out of attempts, too bad! The correct number was " << randomNumber;
             gameOver = true;
         }
     }
