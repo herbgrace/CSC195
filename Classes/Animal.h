@@ -1,10 +1,13 @@
 #pragma once
 #include <string>
 #include <iostream>
+#include <fstream>
 using namespace std;
 
 class Animal {
 public:
+	virtual ~Animal() = default;
+
 	friend std::istream& operator >> (std::istream& istream, Animal& animal);
 	friend std::ostream& operator << (std::ostream& ostream, Animal& animal);
 
